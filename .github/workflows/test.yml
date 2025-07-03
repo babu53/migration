@@ -1,7 +1,7 @@
 name: Manual Input Workflow
 
 name: test file
- on:
+on:
   push:
    branches:
     - master
