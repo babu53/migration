@@ -1,6 +1,5 @@
 name: Manual Input Workflow
 
-name: test file
 on:
   push:
    branches:
