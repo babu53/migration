@@ -13,3 +13,11 @@ jobs:
         date
         echo "this is test file"
         echo "Today's date is $DATE"
+demo:
+  runs-on: self-hosted
+  steps:
+    - name: run linux commands
+      run: |
+        date
+        echo "this is test file"
+        echo "Today's date is $DATE"
