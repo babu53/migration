@@ -10,5 +10,6 @@ jobs:
   steps:
     - name: run linux commands
       run: |
+        date
         echo "this is test file"
         echo "Today's date is $DATE"
