@@ -10,11 +10,12 @@ env:
 
 jobs:
   print-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       JOB_VAR: "job-level"
     steps:
       - name: Step with env
+        shell: cmd
         env:
           STEP_VAR: "step-value"
         run: |
