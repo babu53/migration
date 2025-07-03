@@ -1,9 +1,15 @@
 name: Manual Input Workflow
 
 on:
-  push:
-   branches:
-    - master
+  # push:
+  #  branches:
+  #   - master
+  workflow_call:
+   inputs:
+     target-folder:
+       required: true
+       type: sting
+       defalt: test
 
 env:
   GLOBAL_VAR: "global-value"
@@ -22,3 +28,4 @@ jobs:
           echo "Global var****: $GLOBAL_VAR"
           echo "Job var: $JOB_VAR"
           echo "Step var: $STEP_VAR"
+          mkdir ${{inputs.target-folder}}
