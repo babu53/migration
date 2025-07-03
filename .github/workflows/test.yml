@@ -10,7 +10,7 @@ env:
 
 jobs:
   print-job:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       JOB_VAR: "job-level"
     steps:
@@ -18,6 +18,6 @@ jobs:
         env:
           STEP_VAR: "step-value"
         run: |
-          echo "Global var: $GLOBAL_VAR"
+          echo "Global var****: $GLOBAL_VAR"
           echo "Job var: $JOB_VAR"
           echo "Step var: $STEP_VAR"
