@@ -4,20 +4,20 @@ on:
   push:
    branches:
     - master
+
+env:
+  GLOBAL_VAR: "global-value"
+
 jobs:
- test:
-  runs-on: self-hosted
-  steps:
-    - name: run linux commands
-      run: |
-        date
-        echo "this is test file"
-        echo "Today's date is $DATE"
-demo:
-  runs-on: self-hosted
-  steps:
-    - name: run linux commands
-      run: |
-        date
-        echo "this is test file"
-        echo "Today's date is $DATE"
+  print-job:
+    runs-on: self-hosted
+    env:
+      JOB_VAR: "job-level"
+    steps:
+      - name: Step with env
+        env:
+          STEP_VAR: "step-value"
+        run: |
+          echo "Global var: $GLOBAL_VAR"
+          echo "Job var: $JOB_VAR"
+          echo "Step var: $STEP_VAR"
