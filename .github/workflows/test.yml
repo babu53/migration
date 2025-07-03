@@ -27,7 +27,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Run Linux commands using Git Bash
-        shell: pwsh
+        shell: bash
         run: |
           echo "This is Linux-style output"
           pwd
