@@ -8,17 +8,27 @@ on:
 env:
   GLOBAL_VAR: "global-value"
 
+# jobs:
+#   print-job:
+#     runs-on: self-hosted
+#     env:
+#       JOB_VAR: "job-level"
+#     steps:
+#       - name: Step with env
+#         shell: bash
+#         env:
+#           STEP_VAR: "step-value"
+#         run: |
+#           echo "Global var****: $GLOBAL_VAR"
+#           echo "Job var: $JOB_VAR"
+#           echo "Step var: $STEP_VAR"
 jobs:
-  print-job:
+  linux-commands-on-windows:
     runs-on: self-hosted
-    env:
-      JOB_VAR: "job-level"
     steps:
-      - name: Step with env
+      - name: Run Linux commands using Git Bash
         shell: bash
-        env:
-          STEP_VAR: "step-value"
         run: |
-          echo "Global var****: $GLOBAL_VAR"
-          echo "Job var: $JOB_VAR"
-          echo "Step var: $STEP_VAR"
+          echo "This is Linux-style output"
+          pwd
+          ls -la
