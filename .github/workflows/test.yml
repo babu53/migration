@@ -15,7 +15,7 @@ jobs:
       JOB_VAR: "job-level"
     steps:
       - name: Step with env
-        shell: pwsh
+        shell: bash
         env:
           STEP_VAR: "step-value"
         run: |
