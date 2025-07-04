@@ -1,0 +1,19 @@
+name: Manual Input Workflow
+
+on:
+  push:
+   branches:
+    - master
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: checkout primary repository
+        uses: actions/checkout@v4
+      - name: checkout first repository
+        uses: actions/checkout@v4
+        with:
+          repository: babu53/merge
+          ref: refs/tags/TV1
+          path: mergee   
