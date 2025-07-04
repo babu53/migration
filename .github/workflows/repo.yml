@@ -10,14 +10,21 @@ jobs:
   build:
     runs-on: self-hosted
 
+    # steps:
+    #   # - name: checkout primary repository
+    #   #   uses: actions/checkout@v4
+    #   # - name: checkout first repository
+    #   #   uses: actions/checkout@v4
+    #   #   with:
+    #   #     repository: babu53/merge
+    #   #     ref: refs/tags/T.V.1
+    #   #     path: mergee 
+    #   - name: Show build number
+    #     run: wsl echo "Build number: ${{ github.run_number }}" 
     steps:
-      # - name: checkout primary repository
-      #   uses: actions/checkout@v4
-      # - name: checkout first repository
-      #   uses: actions/checkout@v4
-      #   with:
-      #     repository: babu53/merge
-      #     ref: refs/tags/T.V.1
-      #     path: mergee 
-      - name: Show build number
-        run: wsl echo "Build number: ${{ github.run_number }}" 
+      - name: Run Linux-style command using Git Bash
+        shell: bash
+        run: |
+          echo "Running in Git Bash"
+          ls -la
+          uname -a
