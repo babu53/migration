@@ -20,4 +20,5 @@ jobs:
           ref: refs/tags/T.V.1
           path: mergee 
       - name: Show build number
+        shell: bash
         run: echo "Build number: ${{ github.run_number }}" 
