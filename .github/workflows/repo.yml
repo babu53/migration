@@ -15,5 +15,5 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: babu53/merge
-          ref: refs/tags/TV1
+          ref: refs/tags/T.V.1
           path: mergee   
