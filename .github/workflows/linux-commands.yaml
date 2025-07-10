@@ -11,4 +11,5 @@ jobs:
         #shell: bash
         run: |
           echo "this is test file"
+          mkdir test
           ls
