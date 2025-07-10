@@ -1,9 +1,11 @@
 name: print environtment
 on:
   workflow_dispatch: null
+env:
+  name: prod-test
 jobs:
   call-deploy-workflow:
     uses: ./.github/workflows/input.yaml
     with:
-      environment: devstage
+      environment: {{ env.name }}
     
