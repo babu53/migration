@@ -11,3 +11,4 @@ jobs:
         #shell: bash
         run: |
           echo "this is test file"
+          ls
