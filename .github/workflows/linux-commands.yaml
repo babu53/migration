@@ -14,3 +14,5 @@ jobs:
           echo "github workspace:$GITHUB_WORKSPACE"
           mkdir test
           ls
+          cd test
+          pwd
