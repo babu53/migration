@@ -1,0 +1,9 @@
+name: print environtment
+on:
+  workflow_dispatch: null
+jobs:
+  call-deploy-workflow:
+    uses: ./.github/workflows/input.yaml
+    with:
+      environment: devstage
+    

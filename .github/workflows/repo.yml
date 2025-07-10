@@ -1,9 +1,9 @@
 name: 
 
 on:
-  push:
-   branches:
-    - master
+  # push:
+  #  branches:
+  #   - master
 env:
   ACS.VersoinShort: 2025.1.1
 
