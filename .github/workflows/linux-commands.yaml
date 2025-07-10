@@ -11,5 +11,6 @@ jobs:
         #shell: bash
         run: |
           echo "this is test file"
+          echo "github workspace:$GITHUB_WORKSPACE
           mkdir test
           ls
