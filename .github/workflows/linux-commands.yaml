@@ -8,6 +8,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: print linux commands
-        shell: bash
+        #shell: bash
         run: |
           echo "this is test file"
