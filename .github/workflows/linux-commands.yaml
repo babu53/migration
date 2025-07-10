@@ -6,7 +6,8 @@ on:
 jobs:
   test:
     runs_on: windows_latest
-    - name: print linux commands
-      shell: bash
-      run: |
-      echo "this is test file"
+    steps:
+      - name: print linux commands
+        shell: bash
+        run: |
+          echo "this is test file"

@@ -1,4 +1,4 @@
-name: Manual Input Workflow
+name: 
 
 on:
   push:
