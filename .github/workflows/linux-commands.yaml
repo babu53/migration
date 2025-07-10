@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   test:
-    runs-on: windows_latest
+    runs-on: windows-latest
     steps:
       - name: print linux commands
         shell: bash
