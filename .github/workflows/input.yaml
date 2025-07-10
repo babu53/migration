@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: print environment
       run: |
-      echo "print environment: ${{inputs.environment }}"
+        echo "print environment: ${{inputs.environment }}"
