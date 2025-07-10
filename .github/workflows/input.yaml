@@ -11,4 +11,5 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: print environment
+      run: |
       echo "print environment: ${{inputs.environment }}"
