@@ -1,0 +1,15 @@
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      MY_ENV_VAR:
+        required: true
+        type: string
+
+jobs:
+  print-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print passed env
+        run: echo "ENV: ${{ inputs.MY_ENV_VAR }}

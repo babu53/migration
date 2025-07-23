@@ -1,0 +1,12 @@
+name: Main Workflow
+
+on: [workflow_dispatch]
+
+env:
+  GLOBAL_ENV: "Hello from main"
+
+jobs:
+  call-reusable:
+    uses: ./.github/workflows/reusable.yml
+    with:
+      MY_ENV_VAR: ${{ env.GLOBAL_ENV }}
