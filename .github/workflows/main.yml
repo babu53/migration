@@ -7,6 +7,6 @@ env:
 
 jobs:
   call-reusable:
-    uses: ./.github/workflows/reusable.yml
+    uses: ./.github/workflows/reuse.yml
     with:
       MY_ENV_VAR: ${{ env.GLOBAL_ENV }}
