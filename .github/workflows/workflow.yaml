@@ -4,8 +4,8 @@ on:
 env:
   NAME: prod-test
 jobs:
-  call-deploy-workflow:
+  call-deploy-workflow
     uses: ./.github/workflows/input.yaml
     with:
-      environment: ${{ env.name }}
+      environment: ${{ env.NAME }}
     
