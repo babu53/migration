@@ -2,7 +2,7 @@ name: print environtment
 on:
   workflow_dispatch: null
 env:
-  name: prod-test
+  NAME: prod-test
 jobs:
   call-deploy-workflow:
     uses: ./.github/workflows/input.yaml
